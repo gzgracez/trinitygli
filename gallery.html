@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8" />
@@ -8,6 +8,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!--Loading Flat UI -->
     <link href="bootstrap.css" rel="stylesheet" />
+		    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
     <!--[if lt IE 9]>
                         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
                 <![endif]-->
@@ -16,56 +18,20 @@
     <link rel="shortcut icon" href="TGLIfavi2.ico" />
     <style>
             body{background-color: #000f38; color: #ffffff}
-            h1{color: #000000;}
-						div.img {
-								margin: 5px;
-								padding: 5px;
-								border: 1px solid #0000ff;
-								height: auto;
-								width: auto;
-								float: left;
-								text-align: center;
-						}	
+            h1{color: #ffffff;}
+						#cw{
+							-webkit-transform: rotate(90deg);
+							height: 210px; /* Width of container - padding (Height is now width since the image is rotated.) */
+						}
+						#ccw{
+							-webkit-transform: rotate(-90deg);
+							height: 210px; /* Width of container - padding (Height is now width since the image is rotated.) */
+						}
+						#horizontalflip{
+							-webkit-transform: rotate(180deg);
+						}
+		</style>
 
-						div.img img {
-								display: inline;
-								margin: 5px;
-								border: 1px solid #ffffff;
-						}
-
-						div.img a:hover img {
-								border: 1px solid #0000ff;
-						}
-
-						div.desc {
-							text-align: center;
-							font-weight: normal;
-							width: 120px;
-							margin: 5px;
-						}
-						img.rotate270 {
-								-webkit-transform: rotate(270deg);
-								-moz-transform: rotate(270deg);
-								-o-transform: rotate(270deg);
-								-ms-transform: rotate(270deg);
-								transform: rotate(270deg);
-						}
-						img.rotate90 {
-								-webkit-transform: rotate(90deg);
-								-moz-transform: rotate(90deg);
-								-o-transform: rotate(90deg);
-								-ms-transform: rotate(90deg);
-								transform: rotate(90deg);
-						}
-						#footer {
-								clear: both;
-								position: relative;
-								z-index: 10;
-								height: 3em;
-								margin-top: -3em;
-						}
-														
-</style>
   </head>
   <body>
   <!-- Navigation Bar
@@ -74,10 +40,13 @@
     <div class="container">
       <div class="navbar navbar-inverse navbar-static-top">
         <div class="navbar-header">
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></a> 
-        <a class="navbar-brand" href="index.html">
-          <font face="Times New Roman" color="black">Trinity GLI</font>
-        </a></div>
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+       <a class="navbar-brand" href="index.html"><font face="Times New Roman" color="black">Trinity GLI</font></a>
+       </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li>
@@ -92,22 +61,18 @@
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <font color="black">Events </font>
+                <font color="black">Events <b class="caret"></b></font>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="eventscal.html">
-                    <font color="black">Calendar</font>
-                  </a>
-                </li>
-                <li>
-                  <a href="gallery.html">
-                    <font color="black">Gallery</font>
-                  </a>
+										<a href="eventscal.html"><font color="black">Calendar</font></a>
+                  </li>
+                  <li>
+                    <a href="gallery.html"><font color="black">Gallery</font></a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="active">
               <a href="blog.html">
                 <font color="black">Blog</font>
               </a>
@@ -126,31 +91,80 @@
   <!-- /navbar wrapper -->
   <!-- Gallery Begins -->
 	<div id="contentframe" style="position:relative; top: 120px; left: 0px;">
-  <div class="img">
-    <a target="_blank" href="BBOG/BBOG1.jpg">
-      <img src="BBOG/BBOG1.jpg" alt="B1" width="110" height="90" />
-    </a>
-    <div class="desc">#BringBackOurGirls</div>
-  </div>
-  <div class="img">
-    <a target="_blank" href="BBOG/2.jpg">
-      <img src="BBOG/2.jpg" alt="B2" width="110" height="90" class="rotate90"/>
-    </a>
-    <div class="desc">#BringBackOurGirls</div>
-  </div>
-  <div class="img">
-    <a target="_blank" href="BBOG/3.jpg">
-      <img src="BBOG/3.jpg" alt="B2" width="110" height="90" class="rotate90"/>
-    </a>
-    <div class="desc">#BringBackOurGirls</div>
-  </div>
-  <div class="img">
-    <a target="_blank" href="klematis4_big.htm">
-      <img src="klematis4_small.jpg" alt="Klematis" width="110" height="90" />
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-	</div>
+     <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1>#BringBackOurGirls</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/BBOG1.jpg">
+                    <img class="img-responsive" src="BBOG/BBOG1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/5.jpg">
+                    <img class="img-responsive" src="BBOG/5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/6.jpg">
+                    <img class="img-responsive" src="BBOG/6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/7.jpg">
+                    <img class="img-responsive" id="horizontalflip" src="BBOG/7.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/15.jpg">
+                    <img class="img-responsive" src="BBOG/15.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/16.jpg">
+                    <img class="img-responsive" src="BBOG/16.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/18.jpg">
+                    <img class="img-responsive" id="horizontalflip" src="BBOG/18.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/19.jpg">
+                    <img class="img-responsive" src="BBOG/19.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/26.jpg">
+                    <img class="img-responsive" src="BBOG/26.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="BBOG/29.jpg">
+                    <img class="img-responsive" src="BBOG/29.jpg" alt="">
+                </a>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="BBOG/29.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div> -->
+        </div>
+
+        <hr>
+    </div>
+
+	</div> 
   <!-- Gallery Ends -->
   <!-- FOOTER -->
   <div id="contentframe" style="position:relative; top: 120px; left: 0px;">
