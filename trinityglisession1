@@ -1,0 +1,18 @@
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="7">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2408" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\index.html" backupFilePath="" originalFileLastModifTimestamp="1409342101" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2408" startPos="207" endPos="207" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\events.html" backupFilePath="" originalFileLastModifTimestamp="1408577358" />
+            <File firstVisibleLine="80" xOffset="0" scrollWidth="2408" startPos="3107" endPos="3107" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\contact.html" backupFilePath="" originalFileLastModifTimestamp="1409539070" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="3504" startPos="43" endPos="43" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\eventscal.html" backupFilePath="" originalFileLastModifTimestamp="1409342076" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="744" startPos="4162" endPos="4162" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\blog.html" backupFilePath="" originalFileLastModifTimestamp="1409539214" />
+            <File firstVisibleLine="163" xOffset="0" scrollWidth="1449" startPos="7417" endPos="7417" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\gallery.html" backupFilePath="" originalFileLastModifTimestamp="1409544459" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2408" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\about.html" backupFilePath="" originalFileLastModifTimestamp="1409342096" />
+        </mainView>
+        <subView activeIndex="2">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1368" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\bootstrap.css" backupFilePath="" originalFileLastModifTimestamp="1409538006" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1368" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\carousel.css" backupFilePath="" originalFileLastModifTimestamp="1409281670" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1368" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\grace\Documents\GitHub\trinitygli\thumbnail-gallery.css" backupFilePath="" originalFileLastModifTimestamp="1409536138" />
+        </subView>
+    </Session>
+</NotepadPlus>
